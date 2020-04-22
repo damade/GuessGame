@@ -7,7 +7,7 @@ def easyMode():
     totalNumber = 6
     while(count <= totalNumber):
         try:
-            userInput = int(input("What is the number? "))
+            userInput = int(input("\nWhat is the number? "))
             if (userInput == easyRandomValue):
                 print("\nYou guessed right")
                 print(f"You got it after {count} trials\n")
@@ -24,7 +24,7 @@ def easyMode():
                 count += 1
                 continue
         except ValueError:
-            print("Please enter a number")
+            print("\nPlease enter a number")
             continue
     print("Game Over")
     homeAnyOther()
@@ -36,11 +36,11 @@ def mediumMode():
     totalNumber = 4
     while (count <= totalNumber):
         try:
-            userInput = int(input("What is the number? "))
+            userInput = int(input("\nWhat is the number? "))
             if (userInput == mediumRandomValue):
                 print("\nYou guessed right")
                 print(f"You got it after {count} trials\n")
-                # break
+                #break
                 homeAnyOther()
             elif (userInput < mediumRandomValue):
                 print("\nThat was wrong\nYour guess is low")
@@ -53,7 +53,7 @@ def mediumMode():
                 count += 1
                 continue
         except ValueError:
-            print("Please enter a number")
+            print("\nPlease enter a number")
             continue
     print("Game Over")
     homeAnyOther()
@@ -65,11 +65,11 @@ def hardMode():
     totalNumber = 3
     while (count <= totalNumber):
         try:
-            userInput = int(input("What is the number? "))
+            userInput = int(input("\nWhat is the number? "))
             if (userInput == hardRandomValue):
                 print("\nYou guessed right")
                 print(f"You got it after {count} trials\n")
-                # break
+                #break
                 homeAnyOther()
             elif (userInput < hardRandomValue):
                 print("\nThat was wrong\nYour guess is low")
@@ -82,7 +82,7 @@ def hardMode():
                 count += 1
                 continue
         except ValueError:
-            print("Please enter a number")
+            print("\nPlease enter a number")
             continue
     print("Game Over")
     homeAnyOther()
